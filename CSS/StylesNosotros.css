@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+    height: 25px;
+    justify-content: space-between;
+    background-color: #248795;
+    align-items: center;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: antiquewhite;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.image-container {
+    display: flex;
+}
+.image-container img {
+    width: 50%;
+    transition: transform 0.2s;
+}
+.image-container img:hover {
+    transform: scale(1.1);
+}
+.article {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #248795; 
+    padding: 20px 0; 
+}
+
+.footerContainer {
+    width: 100%;
+    text-align: center; 
+}
+
+.footerNav {
+    margin: 20px 0; 
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+}
+
+.footerNav ul li a {
+    color: #fff;
+    margin: 10px 20px; 
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7; 
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+    text-decoration: underline; 
+}
+
+.footerBotton {
+    background-color: #248795; 
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.footerBotton p {
+    color: #fff;
+    font-size: 0.9em;   
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+@media (max-width: 700px) {
+    .footerNav ul {
+        flex-direction: column;
+    }
+
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
