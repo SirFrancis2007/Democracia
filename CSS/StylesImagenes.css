@@ -6,17 +6,17 @@ html.body{
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-
+/*Header*/
 a{
     text-decoration: none;
-    color: black;
+    color: aliceblue;
 }
 
 header{
     display: flex;
-    height: 25px;
+    height: 50px;
     justify-content: space-between;
-    background-color: #248795;
+    background-color: rgb(39, 110, 157);;
     align-items: center;
     padding: 15px;
 }
@@ -37,111 +37,118 @@ nav a{
 }
 
 nav a:hover{
-    color: antiquewhite;
+    color: black;
+}
+/*Cartas*/
+
+body {
+    font-family: Arial, sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-    letter-spacing: 0.03em;
-    line-height: 1.6;
-}
-
-.title{
-    text-align: center;
-    font-size: 40px;
-    color: aquamarine;
-    margin-top: 100%;
-    font-weight: 100;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
+.contenedor {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-around;
+    padding: 20px;
 }
 
-.container .card {
-    width: 330px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+.carta {
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
     overflow: hidden;
-    margin: 20px;
-    text-align: center;
-    transition: all 0.25s;
-    margin-bottom: 20px;
 }
 
-
-.container .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    margin: 16px auto 0;
-}
-
-.container .card img{
+.imagen {
     width: 100%;
-    height: 220px;
-    
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
 }
 
-.container .card p{
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
+.contenido {
+    padding: 10px;
 }
 
-*{
+h2 {
+    text-align: center;
+}
+
+/*Imagenes 4x4*/
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     width: 100%;
 }
 
-.row{
+.row {
     display: flex;
     padding: 5px;
     flex-wrap: wrap;
 }
 
-.column{
+.column {
     flex: 25%;
     padding: 5px;
 }
 
-.column img{
+.column img {
     margin-top: 5px;
 }
 
-@media (max-width: 800px){
-    .column{
+.hidden {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .column {
         flex: 50%;
     }
 }
-@media (max-width: 600px){
-    .column{
+
+@media (max-width: 600px) {
+    .column {
         flex: 100%;
     }
 }
 
+/*Footer*/
+
 footer {
-    background-color: #248795; 
+    background-color: rgb(39, 110, 157);; 
     padding: 20px 0; 
 }
 
 .footerContainer {
     width: 100%;
     text-align: center; 
+}
+
+.footerBotton {
+    background-color: rgb(39, 110, 157);; 
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.footerBotton p {
+    color: #fff;
+    font-size: 0.9em;   
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
 }
 
 .footerNav {
@@ -168,25 +175,21 @@ footer {
     text-decoration: underline; 
 }
 
-.footerBotton {
-    background-color: #248795; 
-    padding: 20px;
-    text-align: center;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.footerBotton p {
+.footerSocial a {
     color: #fff;
-    font-size: 0.9em;   
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-.designer {
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0 5px;
+.footerSocial img {
+    width: 30px; /* Tamaño deseado para los logotipos */
+    height: 30px; /* Tamaño deseado para los logotipos */
 }
 
 @media (max-width: 700px) {
@@ -200,6 +203,9 @@ footer {
         margin: 10px;
     }
 }
+
+
+/*Cortina*/
 
 section {
     display: flex;
@@ -225,3 +231,66 @@ section img:hover {
     opacity: 1;
     filter: contrast(120%);
 }
+
+.slider{
+    aspect-ratio: 10 / 16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-aling: center;
+}
+
+/*Carrucel*/
+
+.carousel {
+    width: 400px; /* Tamaño del carrusel */
+    overflow: hidden;
+    margin: 0 auto; /* Centrar el carrusel horizontalmente */
+    position: relative; /* Agregar posición relativa para alinear los botones */
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 400px;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-button {
+    cursor: pointer;
+    font-size: 36px; /* Aumentar el tamaño de las flechas */
+    opacity: 0.6; /* Hacer las flechas más sutiles */
+    position: absolute; /* Posición absoluta para los botones */
+    top: 50%; /* Alinear verticalmente al centro */
+    transform: translateY(-50%); /* Alinear verticalmente al centro */
+}
+
+.carousel-button.left {
+    left: 0; /* Alinear el botón izquierdo a la izquierda */
+}
+
+.carousel-button.right {
+    right: 0; /* Alinear el botón derecho a la derecha */
+}
+
+.carousel-button:hover {
+    opacity: 1; /* Recuperar la opacidad al pasar el ratón por encima */
+}
+
