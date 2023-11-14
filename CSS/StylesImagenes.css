@@ -1,4 +1,4 @@
-html.body{
+html.body {
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -6,17 +6,19 @@ html.body{
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
+
 /*Header*/
-a{
+a {
     text-decoration: none;
     color: aliceblue;
 }
 
-header{
+header {
     display: flex;
     height: 50px;
     justify-content: space-between;
-    background-color: rgb(39, 110, 157);;
+    background-color: rgb(39, 110, 157);
+    ;
     align-items: center;
     padding: 15px;
 }
@@ -26,19 +28,20 @@ header{
     align-items: center;
 }
 
-.logo img{
+.logo img {
     height: 50px;
     margin-right: 15px;
 }
 
-nav a{
+nav a {
     font-weight: 600;
     padding-right: 10px;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
 }
+
 /*Cartas*/
 
 body {
@@ -121,26 +124,28 @@ img {
 /*Footer*/
 
 footer {
-    background-color: rgb(39, 110, 157);; 
-    padding: 20px 0; 
+    background-color: rgb(39, 110, 157);
+    ;
+    padding: 20px 0;
 }
 
 .footerContainer {
     width: 100%;
-    text-align: center; 
+    text-align: center;
 }
 
 .footerBotton {
-    background-color: rgb(39, 110, 157);; 
+    background-color: rgb(39, 110, 157);
+    ;
     padding: 20px;
     text-align: center;
-    border-top-left-radius: 10px; 
+    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .footerBotton p {
     color: #fff;
-    font-size: 0.9em;   
+    font-size: 0.9em;
 }
 
 .designer {
@@ -152,27 +157,27 @@ footer {
 }
 
 .footerNav {
-    margin: 20px 0; 
+    margin: 20px 0;
 }
 
 .footerNav ul {
     display: flex;
     justify-content: center;
-    list-style: none; 
+    list-style: none;
 }
 
 .footerNav ul li a {
     color: #fff;
-    margin: 10px 20px; 
+    margin: 10px 20px;
     text-decoration: none;
     font-size: 1.3em;
-    opacity: 0.7; 
+    opacity: 0.7;
     transition: 0.5s;
 }
 
 .footerNav ul li a:hover {
     opacity: 1;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .footerSocial {
@@ -188,8 +193,10 @@ footer {
 }
 
 .footerSocial img {
-    width: 30px; /* Tamaño deseado para los logotipos */
-    height: 30px; /* Tamaño deseado para los logotipos */
+    width: 30px;
+    /* Tamaño deseado para los logotipos */
+    height: 30px;
+    /* Tamaño deseado para los logotipos */
 }
 
 @media (max-width: 700px) {
@@ -212,16 +219,16 @@ section {
     position: relative;
     width: 600px;
     height: 430px;
-    margin: 0 auto; 
+    margin: 0 auto;
     margin-bottom: 20px;
     margin-top: 15px;
 }
 
 section img {
-    width: 0px; 
+    width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: 0.8; 
+    opacity: 0.8;
     transition: 0.5s ease;
 }
 
@@ -232,7 +239,7 @@ section img:hover {
     filter: contrast(120%);
 }
 
-.slider{
+.slider {
     aspect-ratio: 10 / 16;
     width: 300px;
     position: relative;
@@ -241,7 +248,7 @@ section img:hover {
     scroll-snap-type: x mandatory;
 }
 
-.slider img{
+.slider img {
     width: 100%;
     left: 0;
     position: sticky;
@@ -253,10 +260,13 @@ section img:hover {
 /*Carrucel*/
 
 .carousel {
-    width: 400px; /* Tamaño del carrusel */
+    width: 400px;
+    /* Tamaño del carrusel */
     overflow: hidden;
-    margin: 0 auto; /* Centrar el carrusel horizontalmente */
-    position: relative; /* Agregar posición relativa para alinear los botones */
+    margin: 0 auto;
+    /* Centrar el carrusel horizontalmente */
+    position: relative;
+    /* Agregar posición relativa para alinear los botones */
 }
 
 .carousel-container {
@@ -275,22 +285,29 @@ section img:hover {
 
 .carousel-button {
     cursor: pointer;
-    font-size: 36px; /* Aumentar el tamaño de las flechas */
-    opacity: 0.6; /* Hacer las flechas más sutiles */
-    position: absolute; /* Posición absoluta para los botones */
-    top: 50%; /* Alinear verticalmente al centro */
-    transform: translateY(-50%); /* Alinear verticalmente al centro */
+    font-size: 36px;
+    /* Aumentar el tamaño de las flechas */
+    opacity: 0.6;
+    /* Hacer las flechas más sutiles */
+    position: absolute;
+    /* Posición absoluta para los botones */
+    top: 50%;
+    /* Alinear verticalmente al centro */
+    transform: translateY(-50%);
+    /* Alinear verticalmente al centro */
 }
 
 .carousel-button.left {
-    left: 0; /* Alinear el botón izquierdo a la izquierda */
+    left: 0;
+    /* Alinear el botón izquierdo a la izquierda */
 }
 
 .carousel-button.right {
-    right: 0; /* Alinear el botón derecho a la derecha */
+    right: 0;
+    /* Alinear el botón derecho a la derecha */
 }
 
 .carousel-button:hover {
-    opacity: 1; /* Recuperar la opacidad al pasar el ratón por encima */
+    opacity: 1;
+    /* Recuperar la opacidad al pasar el ratón por encima */
 }
-
