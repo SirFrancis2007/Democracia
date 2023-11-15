@@ -76,6 +76,15 @@ h2 {
     text-align: center;
 }
 
+.textogaleria {
+    text-align: center;
+    transition: text-decoration 0.3s ease; 
+}
+
+.textogaleria:hover {
+    text-decoration: underline; 
+}
+
 /*Imagenes 4x4*/
 * {
     box-sizing: border-box;
